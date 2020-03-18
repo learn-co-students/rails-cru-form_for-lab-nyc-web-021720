@@ -1,0 +1,7 @@
+<h1>All Genre</h1>
+
+<% @genres.each do |genre| %>
+    <%=link_to genre.name, genre_path(genre) %>
+    <%= button_to "Delete", genre_path(genre), method: :delete%>
+    <%= button_to "Edit", edit_genre_path(genre), method: :get%>
+<% end %>

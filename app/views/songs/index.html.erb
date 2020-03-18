@@ -1,0 +1,8 @@
+<h1> All Songs </h1>
+
+<% @songs.each do |song| %>
+    <p><%= song.name %></p>
+    <%= link_to song.name, song_path(song) %>
+    <%= button_to "Delete", song_path(song), method: :delete%>
+    <%= button_to "Edit", edit_song_path(song), method: :get%>
+<% end %>
