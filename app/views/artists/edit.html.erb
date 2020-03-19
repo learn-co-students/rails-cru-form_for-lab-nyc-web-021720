@@ -1,0 +1,9 @@
+<%= form_for(@artist) do |fb| %>
+    <%= fb.label :name %>
+    <%= fb.text_field :name %>
+
+    <%= fb.label :bio %>
+    <%= fb.text_field :bio %>
+
+    <%= fb.submit "Update Artist" %>
+<% end %>
