@@ -1,0 +1,12 @@
+<%= form_for(@song) do |fb| %>
+    <%= fb.label :name %>
+    <%= fb.text_field :name %>
+
+    <%= fb.label :artist_id %>
+    <%= fb.text_field :artist_id %>
+
+    <%= fb.label :genre_id %>
+    <%= fb.text_field :genre_id %>
+
+    <%= fb.submit "Create Song" %>
+<% end %>

@@ -1,0 +1,7 @@
+<ul>
+<% @songs.each do |song| %>
+    <li>
+        <p><a href="/songs/<%= song.id %>%"><%= song.name %></a></p>
+    </li>
+<% end %>
+</ul>
